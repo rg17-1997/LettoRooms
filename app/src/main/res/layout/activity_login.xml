@@ -13,7 +13,7 @@
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="100dp"
-        android:text="SIGN UP"
+        android:text="LOGIN"
         android:textColor="#000000"
         android:textSize="50sp" />
 
@@ -53,34 +53,15 @@
         android:textColor="#000000"
         android:textSize="20sp"
         android:textStyle="bold" />
-
-    <EditText
-        android:id="@+id/confirmpassword"
-        android:layout_width="336dp"
-        android:layout_height="wrap_content"
-        android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="309dp"
-        android:backgroundTint="#e8ffffff"
-        android:drawablePadding="16dp"
-        android:hint="Confirm Password"
-        android:drawableLeft="@drawable/ic_lock_black_24dp"
-        android:inputType="textPassword"
-        android:maxLines="1"
-        android:padding="10dp"
-        android:textColor="#000000"
-        android:textSize="20sp"
-        android:textStyle="bold" />
-
     <Button
-        android:id="@+id/signup"
+        android:id="@+id/login"
         android:layout_width="236dp"
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="369dp"
         android:background="@drawable/roundbutton"
-        android:text="Sign Up"
+        android:text="Login"
         android:textAllCaps="false"
         android:textColor="#ffffff"
         android:textSize="16dp"
