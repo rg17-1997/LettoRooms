@@ -434,6 +434,19 @@
                 android:textColor="#000000"
                 android:textSize="20sp" />
         </RadioGroup>
+        
+         <Button
+            android:id="@+id/landlord_submit"
+            android:layout_width="236dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="1400dp"
+            android:background="@drawable/roundbutton"
+            android:text="Submit"
+            android:textColor="#ffffff"
+            android:textSize="16dp"
+            android:textStyle="bold" />
 
     </RelativeLayout>
 </ScrollView>
