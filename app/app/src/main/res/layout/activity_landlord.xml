@@ -1,0 +1,439 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:focusableInTouchMode="true"
+        tools:context=".Landlord">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="50dp"
+            android:text="LANDLORD"
+            android:textColor="#000000"
+            android:textSize="50sp" />
+
+        <EditText
+            android:id="@+id/address"
+            android:layout_width="350dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="150dp"
+            android:backgroundTint="#02FC0D"
+            android:drawablePadding="16dp"
+            android:hint="Address"
+            android:inputType="textPostalAddress"
+            android:padding="10dp"
+            android:textColor="#000000"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            />
+
+        <EditText
+            android:id="@+id/landmark"
+            android:layout_width="350dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="250dp"
+            android:backgroundTint="#02FC0D"
+            android:drawablePadding="16dp"
+            android:hint="Landmark"
+            android:inputType="textPostalAddress"
+            android:padding="10dp"
+            android:textColor="#000000"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            />
+
+        <TextView
+            android:id="@+id/type"
+            android:layout_width="350dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="350dp"
+            android:drawablePadding="16dp"
+            android:padding="10dp"
+            android:textColor="#000000"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:text="Type of Property you want to rent"
+            />
+
+        <CheckBox
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text=" Paying Guest(PG)"
+            android:textSize="20sp"
+            android:id="@+id/pgc"
+            android:drawablePadding="16dp"
+            android:padding="10dp"
+            android:layout_marginTop="425dp"
+            android:layout_centerHorizontal="true"
+            android:textStyle="bold"
+            android:checked="false"/>
+
+        <EditText
+            android:id="@+id/numberrooms"
+            android:layout_width="350dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="475dp"
+            android:backgroundTint="#02FC0D"
+            android:drawablePadding="16dp"
+            android:hint="Number of rooms available in PG"
+            android:inputType="textPostalAddress"
+            android:padding="10dp"
+            android:textColor="#000000"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            />
+
+        <TextView
+            android:id="@+id/lunch_available"
+            android:layout_width="350dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="525dp"
+            android:drawablePadding="16dp"
+            android:padding="10dp"
+            android:textColor="#000000"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:text="Is lunch available?"
+            />
+
+        <RadioGroup
+            android:id="@+id/lunch_availableradio"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="565dp">
+
+            <RadioButton
+                android:id="@+id/lunch_yes"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="clickButton_lunch"
+                android:text="Yes"
+                android:textColor="#000000"
+                android:textSize="20sp" />
+
+            <RadioButton
+                android:id="@+id/lunch_no"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="clickButton_lunch"
+                android:text="No"
+                android:textColor="#000000"
+                android:textSize="20sp" />
+        </RadioGroup>
+
+        <TextView
+            android:id="@+id/private_shared"
+            android:layout_width="350dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="615dp"
+            android:drawablePadding="16dp"
+            android:padding="10dp"
+            android:textColor="#000000"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:text="Private or Shared Rooms"
+            />
+
+        <CheckBox
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text=" Single"
+            android:textSize="20sp"
+            android:id="@+id/pg1room"
+            android:drawablePadding="16dp"
+            android:padding="10dp"
+            android:layout_marginTop="655dp"
+            android:layout_centerHorizontal="true"
+            android:checked="false"/>
+
+        <CheckBox
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text=" Double Sharing"
+            android:textSize="20sp"
+            android:id="@+id/pg2room"
+            android:drawablePadding="16dp"
+            android:padding="10dp"
+            android:layout_marginTop="680dp"
+            android:layout_centerHorizontal="true"
+            android:checked="false"/>
+
+        <CheckBox
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text=" Triple Sharing"
+            android:textSize="20sp"
+            android:id="@+id/pg3room"
+            android:drawablePadding="16dp"
+            android:padding="10dp"
+            android:layout_marginTop="705dp"
+            android:layout_centerHorizontal="true"
+            android:checked="false"/>
+
+        <CheckBox
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text=" Flat"
+            android:textSize="20sp"
+            android:id="@+id/flatc"
+            android:drawablePadding="16dp"
+            android:padding="10dp"
+            android:layout_marginTop="780dp"
+            android:layout_centerHorizontal="true"
+            android:textStyle="bold"
+            android:checked="false"/>
+
+        <EditText
+            android:id="@+id/bhk"
+            android:layout_width="350dp"
+            android:layout_height="50dp"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="825dp"
+            android:backgroundTint="#02FC0D"
+            android:drawablePadding="16dp"
+            android:hint="Flat BHK(1,2,3,etc)"
+            android:inputType="numberDecimal"
+            android:padding="10dp"
+            android:textColor="#000000"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            />
+
+        <EditText
+            android:id="@+id/numberbhk"
+            android:layout_width="350dp"
+            android:layout_height="50dp"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="870dp"
+            android:backgroundTint="#02FC0D"
+            android:drawablePadding="16dp"
+            android:hint="Number of such flats"
+            android:inputType="numberDecimal"
+            android:padding="10dp"
+            android:textColor="#000000"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            />
+
+        <CheckBox
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Hostel"
+            android:textSize="20sp"
+            android:id="@+id/hostelc"
+            android:drawablePadding="16dp"
+            android:padding="10dp"
+            android:layout_marginTop="945dp"
+            android:layout_centerHorizontal="true"
+            android:textStyle="bold"
+            android:checked="false"/>
+
+        <EditText
+            android:id="@+id/numberrooms_hostel"
+            android:layout_width="350dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="995dp"
+            android:backgroundTint="#02FC0D"
+            android:drawablePadding="16dp"
+            android:hint="Number of rooms available in hostel"
+            android:inputType="numberDecimal"
+            android:padding="10dp"
+            android:textColor="#000000"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            />
+
+        <TextView
+            android:id="@+id/lunch_available_hostel"
+            android:layout_width="350dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="1045dp"
+            android:drawablePadding="16dp"
+            android:padding="10dp"
+            android:textColor="#000000"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:text="Is lunch available?"
+            />
+
+        <RadioGroup
+            android:id="@+id/lunch_availableradio_hostel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="1085dp">
+
+            <RadioButton
+                android:id="@+id/lunchhostel_yes"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="clickButton_lunch"
+                android:text="Yes"
+                android:textColor="#000000"
+                android:textSize="20sp" />
+
+            <RadioButton
+                android:id="@+id/lunchhostel_no"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="clickButton_lunch"
+                android:text="No"
+                android:textColor="#000000"
+                android:textSize="20sp" />
+        </RadioGroup>
+
+        <TextView
+            android:id="@+id/private_shared_hostel"
+            android:layout_width="350dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="1160dp"
+            android:drawablePadding="16dp"
+            android:padding="10dp"
+            android:textColor="#000000"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:text="Private or Shared Rooms"
+            />
+
+        <CheckBox
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text=" Single"
+            android:textSize="20sp"
+            android:id="@+id/hostel1room"
+            android:drawablePadding="16dp"
+            android:padding="10dp"
+            android:layout_marginTop="1200dp"
+            android:layout_centerHorizontal="true"
+            android:checked="false"/>
+
+        <CheckBox
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text=" Double Sharing"
+            android:textSize="20sp"
+            android:id="@+id/hostel2room"
+            android:drawablePadding="16dp"
+            android:padding="10dp"
+            android:layout_marginTop="1225dp"
+            android:layout_centerHorizontal="true"
+            android:checked="false"/>
+
+        <CheckBox
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text=" Triple Sharing"
+            android:textSize="20sp"
+            android:id="@+id/hostel3room"
+            android:drawablePadding="16dp"
+            android:padding="10dp"
+            android:layout_marginTop="1250dp"
+            android:layout_centerHorizontal="true"
+            android:checked="false"/>
+
+        <TextView
+            android:id="@+id/preference"
+            android:layout_width="350dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="1275dp"
+            android:drawablePadding="16dp"
+            android:padding="10dp"
+            android:textColor="#000000"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:text="Preference"
+            />
+
+        <RadioGroup
+            android:id="@+id/preference_radio"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="1325dp">
+
+            <RadioButton
+                android:id="@+id/family"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="clickButton_preference"
+                android:text="Family"
+                android:textColor="#000000"
+                android:textSize="20sp" />
+
+            <RadioButton
+                android:id="@+id/student"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="clickButton_preference"
+                android:text="Student"
+                android:textColor="#000000"
+                android:textSize="20sp" />
+
+            <RadioButton
+                android:id="@+id/male"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="clickButton_preference"
+                android:text="Male"
+                android:textColor="#000000"
+                android:textSize="20sp" />
+
+            <RadioButton
+                android:id="@+id/female"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="clickButton_preference"
+                android:text="Female"
+                android:textColor="#000000"
+                android:textSize="20sp" />
+
+            <RadioButton
+                android:id="@+id/both"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="clickButton_preference"
+                android:text="Both"
+                android:textColor="#000000"
+                android:textSize="20sp" />
+
+            <RadioButton
+                android:id="@+id/both_student_family"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="clickButton_lunch"
+                android:text="Both"
+                android:textColor="#000000"
+                android:textSize="20sp" />
+        </RadioGroup>
+
+    </RelativeLayout>
+</ScrollView>
